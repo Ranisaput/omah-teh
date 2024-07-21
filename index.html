@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omah Teh - Rumah Teh Terbaik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        header {
+            background: #6a9a5b;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .hero {
+            background: url('https://example.com/hero-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1.25rem;
+        }
+        .section {
+            background: #fff;
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .section h2 {
+            text-align: center;
+            color: #6a9a5b;
+        }
+        .section p {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .footer {
+            background: #6a9a5b;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Omah Teh</h1>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Selamat Datang di Omah Teh!</h1>
+            <p>Tempat terbaik untuk menikmati berbagai jenis teh yang lezat dan suasana yang nyaman.</p>
+        </div>
+    </section>
+    <section class="section" id="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Omah Teh adalah sebuah kafe teh yang menawarkan berbagai macam pilihan teh berkualitas tinggi. Kami berkomitmen untuk memberikan pengalaman menikmati teh yang tidak terlupakan dengan suasana yang hangat dan ramah.</p>
+        </div>
+    </section>
+    <section class="section" id="menu">
+        <div class="container">
+            <h2>Menu Kami</h2>
+            <p>Kami menawarkan berbagai jenis teh mulai dari teh tradisional hingga teh modern yang disajikan dengan pilihan cemilan yang lezat.</p>
+            <ul>
+                <li>Teh Hitam</li>
+                <li>Teh Hijau</li>
+                <li>Teh Putih</li>
+                <li>Teh Herbal</li>
+                <li>Cemilan: Kue Kering, Roti Bakar, dan banyak lagi!</li>
+            </ul>
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p>Jika Anda memiliki pertanyaan atau ingin melakukan reservasi, silakan hubungi kami melalui informasi berikut:</p>
+            <p>Email: <a href="mailto:info@omahteh.com">info@omahteh.com</a></p>
+            <p>Telepon: <a href="tel:+621234567890">+62 123 456 7890</a></p>
+            <p>Alamat: Jl. Teh No.1, Jakarta</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Omah Teh. Semua hak dilindungi.</p>
+        <p><a href="#home">Beranda</a> | <a href="#about">Tentang Kami</a> | <a href="#menu">Menu</a> | <a href="#contact">Kontak</a></p>
+    </footer>
+    <script>
+        // JavaScript untuk navigasi smooth scroll
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
